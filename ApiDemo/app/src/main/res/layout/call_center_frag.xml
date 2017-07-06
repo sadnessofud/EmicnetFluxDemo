@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTipBg">
+
+
+    <include
+        android:id="@+id/call_center_title"
+        layout="@layout/base_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/tv_manage_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/call_center_title"
+        android:text="@string/manage_user"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_create_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:layout_below="@+id/tv_manage_user">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_user"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:padding="12dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_call_center_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/call_center_tips"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/rl_create_user"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_activate_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_call_center_tip"
+        android:background="@drawable/button_bg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activate_user"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:padding="12dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_call_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:layout_below="@+id/rl_activate_user">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/call_center"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:padding="12dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/rl_call_out"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorLine"/>
+
+
+</RelativeLayout>

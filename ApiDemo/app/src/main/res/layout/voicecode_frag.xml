@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTipBg">
+
+
+    <include
+        android:id="@+id/voice_code_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        layout="@layout/base_header"
+        />
+
+    <TextView
+        android:id="@+id/experience_voice_code"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/voice_code_title"
+        android:background="@color/colorTipBg"
+        android:gravity="center"
+        android:text="@string/experience_voice_code" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/experience_voice_code"
+        android:background="@color/colorLine" />
+
+    <FrameLayout
+        android:id="@+id/fl_phone_num"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/line2"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/phone"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|center_vertical"
+            android:inputType="phone"
+            android:background="@null"
+            android:textColorHint="@android:color/darker_gray"
+            android:hint="@string/phone_hint" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/fl_phone_num"
+        android:background="@color/colorLine" />
+
+    <FrameLayout
+        android:id="@+id/fl_voice_code"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/line3"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/voice_code"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_voice_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|center_vertical"
+            android:background="@null"
+            android:inputType="number"
+            android:textColorHint="@android:color/darker_gray"
+            android:hint="@string/voice_code_hint" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/fl_voice_code"
+        android:background="@color/colorLine" />
+
+    <RelativeLayout
+        android:id="@+id/rl_voice_receive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/line4">
+
+        <View
+            android:id="@+id/line_receive1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine" />
+
+        <TextView
+            android:id="@+id/tv_voice_receive"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/voice_receive"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="17sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <View
+            android:id="@+id/line_receive2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine"
+            android:layout_below="@id/tv_voice_receive"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/rl_voice_receive">
+
+        <View
+            android:id="@+id/line_verify1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine" />
+
+        <TextView
+            android:id="@+id/tv_verify"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/verify"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="17sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <View
+            android:id="@+id/line_verify2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorLine"
+            android:layout_below="@id/tv_verify"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
