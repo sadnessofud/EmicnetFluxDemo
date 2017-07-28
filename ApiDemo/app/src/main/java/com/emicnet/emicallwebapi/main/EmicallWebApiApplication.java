@@ -8,7 +8,7 @@ import com.android.volley.toolbox.Volley;
 import com.emicnet.emicallwebapi.remote.bean.UserInfo;
 
 /**
- * Created by ShengWang on 2017/5/27.
+ * Created by ShengWang on 2017/7/28.
  */
 
 public class EmicallWebApiApplication extends Application{
